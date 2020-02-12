@@ -2,36 +2,33 @@ import torch
 import torch.nn as nn
 
 
-
-
 class Generator(nn.Module) :
-    def __init__(self) :
+    def __init__(self, input_channel, output_channel, is_unet = False) :
         super(Generator, self).__init__()
-
-        self.encoder = Encoder()
-        self.decoder = Decoder(patch_size = 70)
-
-
+     
+    def forward(self, x) :
+        pass   
+    
 
 class Encoder(nn.Module) :
-    pass
+    def __init__(self) :
+        super(Encoder, self).__init__()
+        pass
+
+    def forward(self, x) :
+        pass
 
 class Decoder(nn.Module) :
-    pass
-
+    def __init__(self) :
+        super(Decoder, self).__init__()
+    
+        pass
+    
+    def forward(self, x) :
+        pass
 
 class Discriminator(nn.Module) :
     pass
 
-
-
-
-
-
-
-
-
-
 if __name__=='__main__' :
     pass
-    
